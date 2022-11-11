@@ -1,0 +1,18 @@
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+public class InetAddressCompare {
+
+	public static void main(String[] args) throws UnknownHostException {
+	InetAddress ps=InetAddress.getByName("www.google.ps");//142.250.186.99
+	InetAddress jo=InetAddress.getByName("www.google.jo");//142.250.186.131
+	
+	if (ps.equals(jo)) {
+		System.out.println("same IP");	
+	}
+	else {
+		System.out.println("is not same IP" );	
+
+	}
+
+	}
+}

@@ -1,0 +1,12 @@
+import java.io.IOException;
+import java.net.InetAddress;
+public class InetAddressHNfinder {
+
+	public static void main(String[] args) throws IOException {
+		InetAddress a= InetAddress.getByName("31.13.92.36");//31.13.92.36
+		System.out.println(a.getHostName());
+		System.out.println(a.getCanonicalHostName());
+		System.out.println(a.isReachable(2));
+	}
+
+}

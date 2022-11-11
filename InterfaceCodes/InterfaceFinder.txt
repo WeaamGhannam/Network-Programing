@@ -1,0 +1,16 @@
+import java.net.NetworkInterface;
+import java.net.SocketException;
+import java.util.Enumeration;
+
+public class InterfaceFinder {
+
+	public static void main(String[] args) throws SocketException {
+    Enumeration interfaces=NetworkInterface.getNetworkInterfaces();
+    while(interfaces.hasMoreElements()) {
+    	NetworkInterface n=(NetworkInterface)interfaces.nextElement();
+    	System.out.println(n);
+    	
+    }
+	}
+
+}
